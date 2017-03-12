@@ -4,8 +4,12 @@ This web-app lets you sign in as a user/trainer and lets you chat with each othe
 
 A USER can chat with TRAINER and a TRAINER can chat with USER.
 
-Clone the repo and start the application by:
-'rails server'
+Clone the repo and run the following:
+rake db:create
+rake db:migrate
+rake db:seed
+Then to start the app:
+rails server
 
 This app uses FAYE for a publish-subscribe messaging system which provides almost real time messaging.
 The gem - 'Private Pub' has been used to publish and subscribe to messages through FAYE.
