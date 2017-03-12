@@ -1,0 +1,16 @@
+COACH
+
+This web-app lets you sign in as a user/trainer and lets you chat with each other.
+
+A USER can chat with TRAINER and a TRAINER can chat with USER.
+
+Clone the repo and start the application by:
+'rails server'
+
+This app uses FAYE for a publish-subscribe messaging system which provides almost real time messaging.
+The gem - 'Private Pub' has been used to publish and subscribe to messages through FAYE.
+
+To start this socket, run this:
+rackup private_pub.ru -s thin -E production
+
+The css and js have been picked up from the internet sources for the look and feel (specially for the chat box!)
